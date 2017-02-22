@@ -24,7 +24,7 @@
     <!-- Personal css -->
     <link rel="stylesheet" type="text/css" href="css/mainpage.css">
   </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="200"> <!-- used to link vabar with scrollsee scrollspy for more details on attribute http://v4-alpha.getbootstrap.com/components/scrollspy/ -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -40,20 +40,23 @@
     </div>
     <div class="collapse navbar-collapse" id="fd-navbar-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"/></a></li>
-        <li><a href="#">CV</a></li>
-        <li><a href="#">Labs</a></li>
-        <li><a href="#">Hobbies</a></li>
+        <li class="active"><a href="#desktop"><span class="glyphicon glyphicon-home"/></a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="desktop parallax"></div>
+<div id="desktop" class="parallax"></div>
 
-<div class="cv parallax">
+<div id="cv" class="parallax">
 </div>
 
-<div class="hobbies parallax"></div>
+<div id="labs" class="parallax">
+</div>
+
+<div id="hobbies" class="parallax"></div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->

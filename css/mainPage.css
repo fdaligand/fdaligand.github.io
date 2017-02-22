@@ -1,13 +1,19 @@
 html, body {
 	height: 100%;
 }
-.desktop {
-    background-image: url("../img/desk.jpg");
+#desktop {
+    /*background-image: url("../img/sainteVictoire.jpg");*/
+    background-color: #aefced;
 }
-.cv {
-    background-image: url("../img/cv.jpeg");
+#cv {
+    /*background-image: url("../img/cv.jpeg");*/
+    background-color: #468499;
 }
-.hobbies {
+#labs {
+    /*background-image: url("../img/cv.jpeg");*/
+    background-color: #9fe1a2;
+}
+#hobbies {
     background-image: url("../img/hobbies.jpg");
 }
 
