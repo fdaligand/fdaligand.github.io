@@ -51,8 +51,31 @@
 <div id="desktop" class="parallax">
   <div class="container-fluid">
     <div class="row">
-      <div class="typewriter">
-        <h1> Hello, I'm Florent. I'm software developper who love web and technologies around it.</h1>
+      <div class="col-xs-12 text-center">
+        <div id="sentence0" class="typewriter home-text">
+          <h3>Hello, my name is Florent.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div id="sentence1" class="typewriter home-text">
+          <h3>I'm a software developer.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div id="sentence2" class="typewriter home-text">
+          <h3> I love web, open source, learning and sports...</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div id="sentence3" class="typewriter home-text">
+          <h3> Scroll down if you want to see more </h3>
+        </div>
       </div>
     </div>
   </div>
@@ -70,11 +93,23 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript">
-  // set clicke button in navbar as active
-  $(".nav a").on("click",function(){
-    $(".nav").find(".active").removeClass("active");
-    $(this).parent().addClass("active");
-  });
+  var sentences = document.querySelectorAll('div[id^="sentence"]');
+  var turnObjToArray = function(obj) {
+    return [].map.call(obj, function(element) {
+      return element;
+    })
+  };
+  sentencesArray = turnObjToArray(sentences)
+  var interval = setInterval( () => { 
+    sentence = sentencesArray.shift();
+    if (sentence)
+      sentence.style.display = "block";
+    console.log(sentence);
+    if (sentencesArray == 0 )
+    {
+      clearInterval(interval);
+    }
+    }, 1000);
 </script>
 </body>
 </html>
