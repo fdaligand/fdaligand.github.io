@@ -80,7 +80,11 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     typing 5s steps(40, end),
     blink-caret .75s step-end infinite;*/
 }
-
+.text-desktop-mobile {
+  font: bold 1.5em monospace;
+  color: #00cd66;
+  margin:0 0 0 0;
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0;}
