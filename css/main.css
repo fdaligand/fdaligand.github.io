@@ -3,9 +3,9 @@ html, body {
 	
 }
 #desktop {
-    /*background-image: url("../img/sainteVictoire.jpg");*/
+    background-image: url("../img/desk.jpg");
     padding-top: 150px; /*http://getbootstrap.com/components/#navbar-fixed-top*/
-    background-color: #1c1b21;
+    /*background-color: #1c1b21;*/
 }
 #cv {
     /*background-image: url("../img/cv.jpeg");*/
@@ -64,9 +64,12 @@ html, body {
     blink-caret .75s step-end 19.5s infinite,
     show 1s step-start 19.5s infinite;
 }
+
 /*****************************************************
 https://css-tricks.com/snippets/css/typewriter-effect/ 
 ******************************************************/
+
+
 .typewriter h3 {
   font: bold 20px monospace;
   color: #00cd66;
@@ -76,16 +79,13 @@ https://css-tricks.com/snippets/css/typewriter-effect/
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto 0 0; /*Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-/*  animation: 
-    typing 5s steps(40, end),
-    blink-caret .75s step-end infinite;*/
 }
 .text-desktop-mobile {
   font: bold 1.5em monospace;
   color: #00cd66;
   margin:0 0 0 0;
 }
-/* The typing effect */
+/* The typing effect*/
 @keyframes typing {
   from { width: 0;}
 }
