@@ -1,0 +1,74 @@
+site_name: Florent's Daily Notes
+site_description: Personal notes and thoughts
+site_author: Florent DALIGAND
+site_url: https://fdaligand.github.io
+
+# Repository
+repo_name: fdaligand/fdaligand.github.io
+repo_url: https://github.com/fdaligand/fdaligand.github.io
+
+# Theme
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+
+# Navigation
+nav:
+  - Home: index.md
+  - Daily Notes:
+    - 2024:
+      - January: notes/2024/january.md
+      - February: notes/2024/february.md
+  - About: about.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fdaligand
