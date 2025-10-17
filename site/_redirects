@@ -1,4 +1,0 @@
-# Netlify redirects file
-# This ensures that all routes are handled by the MkDocs site
-
-/*    /index.html   200
