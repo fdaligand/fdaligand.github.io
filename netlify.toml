@@ -1,26 +1,24 @@
 [build]
   # Build command to install dependencies and build the site
-  command = "pip install -r requirements.txt && mkdocs build"
+  command = "pip install --upgrade pip && pip install -r requirements.txt && mkdocs build"
   
   # Directory where the built site will be located
   publish = "site"
 
 [build.environment]
   # Python version for the build
-  PYTHON_VERSION = "3.9"
+  PYTHON_VERSION = "3.12"
 
-# Redirect rules (optional)
+# Simple redirect for SPA-like behavior
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = {Role = ["admin"]}
 
-# Headers for security (optional)
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
